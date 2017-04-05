@@ -47,7 +47,7 @@
     
     <target name="resolve" depends="install-ivy, generate-src" description="retrieve dependencies withivy">
         <ivy:resolve/>
-        <ivy:cachepath organisation="commons-lang" module="commons-lang" revision="2.1" pathid="lib.path.id" inline="true"/>
+        <ivy:cachepath pathid="lib.path.id"/>
     </target>
     
     <target name="download-ivy" unless="skip.download">
